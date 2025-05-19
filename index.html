@@ -2,131 +2,148 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Camille Eulalie - Accompagnements spirituels</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Camille Eulalie</title>
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f0eb;
-      color: #3b2f2f;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('fond-etoile.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
     }
+
     header {
-      background-color: #d8b4a0;
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 1rem;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
+
     nav {
-      display: flex;
-      justify-content: center;
-      background-color: #a37e6f;
-    }
-    nav a {
-      padding: 1rem;
-      color: white;
-      text-decoration: none;
-    }
-    nav a:hover {
-      background-color: #8d6c5f;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    footer {
       text-align: center;
-      padding: 1rem;
-      background-color: #d8b4a0;
-      margin-top: 2rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 0.5rem;
     }
-    form input,
-    form textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    form button {
-      padding: 0.75rem 1.5rem;
-      background-color: #a37e6f;
-      color: white;
+
+    nav button {
+      background: none;
       border: none;
-      border-radius: 5px;
+      color: #fff;
+      font-size: 1.1rem;
+      margin: 0 1rem;
       cursor: pointer;
     }
-    form button:hover {
-      background-color: #8d6c5f;
+
+    nav button:hover {
+      text-decoration: underline;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      min-height: 70vh;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    img.photo-portrait {
+      max-width: 200px;
+      border-radius: 50%;
+      border: 3px solid #ffd1dc;
+      box-shadow: 0 0 10px rgba(255, 209, 220, 0.8);
+      margin-bottom: 2rem;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+    }
+
+    input[type="submit"] {
+      background-color: #ffd1dc;
+      color: #000;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Camille Eulalie</h1>
-    <p>Accompagnements spirituels, soins vibratoires & guidance</p>
   </header>
+
   <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#soins">Soins</a>
-    <a href="#guidance">Guidance</a>
-    <a href="#contact">Contact</a>
+    <button onclick="openTab('accueil')">Accueil</button>
+    <button onclick="openTab('soins')">Soins</button>
+    <button onclick="openTab('contact')">Contact</button>
   </nav>
 
-  <section id="accueil">
-    <h2>Bienvenue</h2>
-    <div style="text-align: center; margin: 30px 0;">
-      <img src="photo-camille.jpg" alt="Camille Eulalie" style="max-width: 200px; width: 100%; border-radius: 100px; box-shadow: 0 0 15px rgba(255, 209, 220, 0.8);" />
+  <section id="accueil" class="tab-content active">
+    <h2>Qui suis-je ?</h2>
+
+    <div style="text-align: center;">
+      <img src="photo-camille.jpg" alt="Camille Eulalie" class="photo-portrait" />
     </div>
-    <p>Je suis Camille, accompagnante spirituelle, guide intuitive et facilitatrice d’éveil. À travers des soins vibratoires, des lectures d’âme et des rituels, j’accompagne celles et ceux qui souhaitent se reconnecter à leur essence, guérir leurs blessures, harmoniser leurs énergies et avancer sur leur chemin d’âme. Bienvenue dans cet espace sacré de reconnexion et de transformation.</p>
+
+    <p><strong>Je suis Camille Eulalie.</strong><br>
+    Depuis l’enfance, un appel discret mais profond m’habite. J’ai toujours ressenti qu’il existait une réalité plus vaste, plus subtile, au-delà de ce que nos yeux peuvent voir. Ce chemin m’a conduite à explorer le yoga, la nature, les traditions anciennes, les plantes médecines, les mondes chamaniques et la reliance au féminin sacré. Aujourd’hui, j’accompagne celles et ceux qui souhaitent se reconnecter à leur essence profonde, à leurs propres sagesses intérieures et aux rythmes sacrés de la Vie.</p>
   </section>
 
-  <section id="soins">
+  <section id="soins" class="tab-content">
     <h2>Soins vibratoires</h2>
-    <p>Les soins que je propose sont des espaces sacrés de réalignement et d'harmonisation. Par le biais des fréquences subtiles, des intentions, du souffle et du toucher énergétique, j’interviens sur les différents corps subtils afin de les ramener à leur vibration originelle. Mes soins permettent de :</p>
-    <ul>
-      <li>réparer et renforcer l’aura</li>
-      <li>dissoudre les blocages énergétiques</li>
-      <li>harmoniser les chakras</li>
-      <li>réaligner les centres d’énergie</li>
-      <li>favoriser l’ancrage et l’ouverture du cœur</li>
-    </ul>
-    <p>Chaque soin est unique et guidé par l’instant présent. Il peut être accompagné de sons, de chants médecine, de plantes sacrées ou de messages intuitifs.</p>
+    <p>Mes soins sont une invitation à revenir à soi. À travers les énergies, les sons et les intentions, j’harmonise les chakras, répare les auras et réaligne les corps subtils à leur fréquence naturelle. Ces soins vibratoires permettent de libérer les charges émotionnelles, de clarifier l’esprit, de détendre le corps et de raviver la lumière intérieure. C’est un espace sacré de rééquilibrage, de reconnexion et de régénération.</p>
   </section>
 
-  <section id="guidance">
-    <h2>Guidance</h2>
-    <p>À travers mes guidances, je vous accompagne pour recevoir des messages de votre âme, de vos guides ou des plans subtils. Je me connecte à votre champ énergétique et au champ quantique pour lire les informations utiles à votre évolution.</p>
-    <p>Les guidances sont des éclairages pour vous aider à :</p>
-    <ul>
-      <li>comprendre une situation de vie</li>
-      <li>prendre une décision alignée</li>
-      <li>retrouver confiance et clarté</li>
-      <li>vous reconnecter à votre mission d’âme</li>
-    </ul>
-  </section>
+  <section id="contact" class="tab-content">
+    <h2>Me contacter</h2>
+    <form action="mailto:camille.eulalie.accompagnements@gmail.com" method="POST" enctype="text/plain">
+      <label>Nom :</label>
+      <input type="text" name="nom" required />
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Pour toute demande de rendez-vous, d'informations ou d'accompagnement personnalisé, vous pouvez me contacter via le formulaire ci-dessous :</p>
-    <form action="mailto:camille.eulalie.accompagnements@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="Nom" placeholder="Votre nom" required>
-      <input type="email" name="Email" placeholder="Votre adresse email" required>
-      <textarea name="Message" placeholder="Votre message..." rows="5" required></textarea>
-      <button type="submit">Envoyer</button>
+      <label>Email :</label>
+      <input type="email" name="email" required />
+
+      <label>Message :</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <input type="submit" value="Envoyer" />
     </form>
-    <p>Ou directement par mail : <strong>camille.eulalie.accompagnements@gmail.com</strong><br />
-    Téléphone : <strong>0690 96 70 42</strong></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Camille Eulalie - Tous droits réservés</p>
+    <p>&copy; 2025 Camille Eulalie</p>
   </footer>
+
+  <script>
+    function openTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
 </body>
 </html>
-
-
