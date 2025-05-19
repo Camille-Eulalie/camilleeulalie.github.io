@@ -2,229 +2,131 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Camille Eulalie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camille Eulalie - Accompagnements spirituels</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      color: white;
-      background-image: url(https://github.com/Camille-Eulalie/camilleeulalie.github.io/blob/main/banniere-camille1.png?raw=true);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      min-height: 100vh;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f0eb;
+      color: #3b2f2f;
     }
-
+    header {
+      background-color: #d8b4a0;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
     nav {
-      background: rgba(0, 0, 0, 0.6);
       display: flex;
       justify-content: center;
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      background-color: #a37e6f;
     }
-
-    nav button {
-      background: transparent;
-      border: none;
-      color: #ffd1dc;
-      font-size: 1.2em;
-      margin: 0 15px;
-      padding: 10px 20px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      border-radius: 25px;
-    }
-
-    nav button:hover, nav button.active {
-      background: #ffd1dc;
-      color: #3a003a;
-      font-weight: bold;
-    }
-
-    .tab-content {
-      max-width: 900px;
-      margin: 40px auto;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 30px 40px;
-      border-radius: 20px;
-      box-shadow: 0 0 15px rgba(255, 209, 220, 0.6);
-    }
-
-    h1<div style="text-align: center; margin: 30px 0;">
-  <img src="photo-camille.jpg" alt="Camille Eulalie" style="max-width: 200px; width: 100%; border-radius: 100px; box-shadow: 0 0 15px rgba(255, 209, 220, 0.8);" />
-</div>
-, h2 {
-      margin-top: 0;
-    }
-
-    a {
-      color: #ffd1dc;
+    nav a {
+      padding: 1rem;
+      color: white;
       text-decoration: none;
     }
-
-    a:hover {
-      text-decoration: underline;
+    nav a:hover {
+      background-color: #8d6c5f;
     }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-      nav button {
-        margin: 8px 0;
-      }
-      .tab-content {
-        margin: 20px 10px;
-        padding: 20px;
-      }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #d8b4a0;
+      margin-top: 2rem;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      padding: 0.75rem 1.5rem;
+      background-color: #a37e6f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #8d6c5f;
     }
   </style>
 </head>
 <body>
-
+  <header>
+    <h1>Camille Eulalie</h1>
+    <p>Accompagnements spirituels, soins vibratoires & guidance</p>
+  </header>
   <nav>
-    <button class="tablink active" onclick="openTab(event, 'accueil')">Accueil</button>
-    <button class="tablink" onclick="openTab(event, 'accompagnements')">Accompagnements</button>
-    <button class="tablink" onclick="openTab(event, 'soins')">Soins</button>
-    <button class="tablink" onclick="openTab(event, 'guidances')">Guidances</button>
-    <button class="tablink" onclick="openTab(event, 'contact')">Contact</button>
+    <a href="#accueil">Accueil</a>
+    <a href="#soins">Soins</a>
+    <a href="#guidance">Guidance</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <section id="accueil" class="tab-content" style="display:block;">
-    <h1 style="text-align: center; font-size: 2rem; margin-bottom: 1.5rem;">🌿 Qui suis-je ?</h1>
-
-    <p><strong>Je suis Camille Eulalie.</strong><br>
-    Depuis l’enfance, un appel discret mais profond m’habite.  
-    Une voix intérieure me souffle que le monde est plus vaste que ce que l’on voit.  
-    Que quelque chose de sacré palpite derrière le visible.</p>
-
-    <p>Longtemps, j’ai marché avec cette sensation, sans pouvoir la nommer.  
-    Et puis un jour, <strong>les plantes médecines</strong> sont venues à moi.  
-    Elles ont répondu à l’appel de mon âme comme des alliées anciennes —  
-    messagères du vivant, gardiennes de la mémoire sacrée.</p>
-
-    <p>C’est à travers elles que tout a commencé.  
-    Lors d’une de ces rencontres, l’énergie de la <strong>Kundalini</strong> s’est éveillée en moi.  
-    Une vague incandescente a traversé mon corps, éveillant mes centres,  
-    délogeant mes peurs, activant ma vision intérieure.</p>
-
-    <p>Lors de <strong>voyages chamaniques avec les champignons sacrés</strong>,  
-    j’ai vécu des <em>purifications énergétiques intenses</em>.  
-    Mon corps et mon esprit ont été traversés par des vagues de lumière,  
-    de sons et de vérités.  
-    J’y ai rencontré des <strong>esprits chamaniques anciens</strong>,  
-    qui m’ont initiée à un passage…  
-    celui de la mémoire, de la guérison, de la transmission.</p>
-
-    <p>Puis vint le <strong>Yopo</strong>, médecine des profondeurs.  
-    Il m’a propulsée dans l’immensité du Grand Tout,  
-    dissolvant mes repères, m’invitant à renaître à moi-même,  
-    plus vaste, plus libre.</p>
-
-    <p>Aujourd’hui, je marche entre les mondes.  
-    Je suis passeuse, accompagnante, gardienne d’espaces de transformation.</p>
-
-    <p>À travers mes <strong>soins, guidances intuitives, méditations guidées et transmissions</strong>,  
-    je t’invite à revenir à toi,  
-    à rencontrer ta propre médecine.</p>
-
-    <p style="text-align: center; font-style: italic; margin-top: 2rem;">🌸 Si ces mots résonnent en toi, alors tu es au bon endroit.</p>
+  <section id="accueil">
+    <h2>Bienvenue</h2>
+    <div style="text-align: center; margin: 30px 0;">
+      <img src="photo-camille.jpg" alt="Camille Eulalie" style="max-width: 200px; width: 100%; border-radius: 100px; box-shadow: 0 0 15px rgba(255, 209, 220, 0.8);" />
+    </div>
+    <p>Je suis Camille, accompagnante spirituelle, guide intuitive et facilitatrice d’éveil. À travers des soins vibratoires, des lectures d’âme et des rituels, j’accompagne celles et ceux qui souhaitent se reconnecter à leur essence, guérir leurs blessures, harmoniser leurs énergies et avancer sur leur chemin d’âme. Bienvenue dans cet espace sacré de reconnexion et de transformation.</p>
   </section>
 
-  <section id="accompagnements" class="tab-content" style="display:none;">
-    <h2>🌟 Accompagnements spirituels</h2>
-
-    <p>Les accompagnements que je propose sont des <strong>moments sacrés de reconnexion à votre Âme</strong>, des espaces d’écoute profonde et de partage bienveillant.</p>
-
-    <p>Nous prendrons le temps de <strong>ressentir, comprendre et accueillir vos besoins</strong>, de <strong>lire dans vos énergies</strong>, et de <strong>vous guider sur le chemin de lumière</strong> qui mène à votre vérité intérieure.</p>
-
-    <p>Au fil des séances, je vous transmets des <strong>guidances intuitives</strong> et propose des <strong>soins énergétiques</strong> pour équilibrer et harmoniser vos plans subtils.</p>
-
-    <p>Ces accompagnements ont pour but de vous aider à <strong>redevenir souverain(e)</strong> sur votre chemin spirituel, en vous offrant <strong>des pistes de réflexion, des prises de conscience, et un regard authentique sur vous-même</strong>.</p>
-
-    <p><strong>✨ Tarifs :</strong><br>
-    – Séance à l’unité (1h) : <strong>60 €</strong><br>
-    – Forfait 3 séances (suivi conseillé) : <strong>150 €</strong></p>
-
-    <p>🌸 Vous trouverez toutes les informations pour me contacter dans la section <strong>Contact</strong>.</p>
-
-    <p style="text-align: right;">Avec tout mon Amour,<br><strong>Camille Eulalie</strong></p>
+  <section id="soins">
+    <h2>Soins vibratoires</h2>
+    <p>Les soins que je propose sont des espaces sacrés de réalignement et d'harmonisation. Par le biais des fréquences subtiles, des intentions, du souffle et du toucher énergétique, j’interviens sur les différents corps subtils afin de les ramener à leur vibration originelle. Mes soins permettent de :</p>
+    <ul>
+      <li>réparer et renforcer l’aura</li>
+      <li>dissoudre les blocages énergétiques</li>
+      <li>harmoniser les chakras</li>
+      <li>réaligner les centres d’énergie</li>
+      <li>favoriser l’ancrage et l’ouverture du cœur</li>
+    </ul>
+    <p>Chaque soin est unique et guidé par l’instant présent. Il peut être accompagné de sons, de chants médecine, de plantes sacrées ou de messages intuitifs.</p>
   </section>
 
-  <section id="guidances" class="tab-content" style="display:none;">
-    <h2>✨ Guidances Intuitives</h2>
-    <p>Les <strong>guidances</strong> que je propose sont des espaces sacrés de connexion à votre âme, où les messages subtils peuvent émerger avec clarté et douceur.</p>
-
-    <p>Grâce à mon intuition, à la lecture énergétique et parfois à l’appui d’oracles, je vous transmets les clés, les compréhensions et les élans nécessaires à votre évolution intérieure.  
-    Chaque guidance est unique, tissée sur mesure pour répondre à vos questionnements, vos doutes ou vos élans du moment.</p>
-
-    <p>Ces moments peuvent vous aider à :<br>
-    – Voir plus clair dans une situation<br>
-    – Revenir à votre centre<br>
-    – Prendre une décision alignée<br>
-    – Recevoir les messages de vos guides ou de votre âme</p>
-
-    <p>Je suis simplement le canal :<br>
-    La guidance ne vous dit jamais quoi faire, elle vous invite à <strong>vous souvenir</strong> de qui vous êtes.</p>
-
-    <p><strong>✨ Tarif :</strong> 40 euros la séance (environ 1h)</p>
-
-    <p>Si vous ressentez l’appel, rendez-vous dans la section <a href="#contact">Contact</a> pour réserver votre moment.</p>
+  <section id="guidance">
+    <h2>Guidance</h2>
+    <p>À travers mes guidances, je vous accompagne pour recevoir des messages de votre âme, de vos guides ou des plans subtils. Je me connecte à votre champ énergétique et au champ quantique pour lire les informations utiles à votre évolution.</p>
+    <p>Les guidances sont des éclairages pour vous aider à :</p>
+    <ul>
+      <li>comprendre une situation de vie</li>
+      <li>prendre une décision alignée</li>
+      <li>retrouver confiance et clarté</li>
+      <li>vous reconnecter à votre mission d’âme</li>
+    </ul>
   </section>
 
-  <section id="soins" class="tab-content" style="display:none;">
-  <h2>✨ Soins Vibratoires & Énergétiques</h2>
-
-  <p>Les <strong>soins que je propose</strong> sont des voyages vibratoires au cœur de vos corps subtils.  
-  Ils agissent en profondeur pour <strong>réaligner, réparer, harmoniser</strong>.</p>
-
-  <p>Grâce à la guidance intuitive, aux fréquences sonores, aux chants, aux souffles et aux gestes sacrés,  
-  je me connecte à votre champ énergétique pour :</p>
-
-  <ul>
-    <li>✨ Replacer les corps subtils dans leur axe naturel</li>
-    <li>✨ Réparer les fuites et déchirures de l’aura</li>
-    <li>✨ Libérer les charges stagnantes et les mémoires anciennes</li>
-    <li>✨ Réharmoniser les chakras</li>
-    <li>✨ Rétablir la circulation de l’énergie vitale</li>
-  </ul>
-
-  <p>Chaque soin est unique, <strong>canalisé selon les besoins de votre âme</strong> dans l’instant.  
-  Il peut être accompagné de sons, de plantes alliées, ou d’éléments chamaniques selon la guidance reçue.</p>
-
-  <p>Ces soins vous aident à retrouver un état d’<strong>ancrage, de clarté, de paix intérieure</strong>.  
-  Ils agissent autant sur le plan physique qu’émotionnel, mental et spirituel.</p>
-
-  <p><strong>✨ Tarif :</strong> 60 euros – Durée environ 1h15</p>
-
-  <p>Pour réserver votre soin, rendez-vous dans la section <a href="#contact">Contact</a>.</p>
-</section>
-
-
-  <section id="contact" class="tab-content" style="display:none;">
-    <h2>Contactez-moi</h2>
-    <p>📧 <a href="mailto:camille.eulalie.accompagnements@gmail.com">camille.eulalie.accompagnements@gmail.com</a></p>
-    <p>📞 0690 96 70 42</p>
-    <p>📸 <a href="https://www.instagram.com/camille_eulalie/" target="_blank">@camille_eulalie</a></p>
-    <p>🌐 <a href="https://camilleeulalie.github.io" target="_blank">camilleeulalie.github.io</a></p>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Pour toute demande de rendez-vous, d'informations ou d'accompagnement personnalisé, vous pouvez me contacter via le formulaire ci-dessous :</p>
+    <form action="mailto:camille.eulalie.accompagnements@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Nom" placeholder="Votre nom" required>
+      <input type="email" name="Email" placeholder="Votre adresse email" required>
+      <textarea name="Message" placeholder="Votre message..." rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p>Ou directement par mail : <strong>camille.eulalie.accompagnements@gmail.com</strong><br />
+    Téléphone : <strong>0690 96 70 42</strong></p>
   </section>
 
-  <script>
-    function openTab(evt, tabName) {
-      const tabcontents = document.querySelectorAll('.tab-content');
-      tabcontents.forEach(tc => tc.style.display = 'none');
-
-      const tablinks = document.querySelectorAll('.tablink');
-      tablinks.forEach(tl => tl.classList.remove('active'));
-
-      document.getElementById(tabName).style.display = 'block';
-      evt.currentTarget.classList.add('active');
-    }
-  </script>
-
+  <footer>
+    <p>&copy; 2025 Camille Eulalie - Tous droits réservés</p>
+  </footer>
 </body>
 </html>
+
+
