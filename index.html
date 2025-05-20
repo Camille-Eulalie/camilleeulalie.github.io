@@ -18,15 +18,30 @@
       min-height: 100vh;
     }
 
-    nav {
-      background: rgba(0, 0, 0, 0.6);
-      display: flex;
-      justify-content: center;
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+  nav {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 5px;
+  z-index: 1000;
+}
+
+/* Fixe seulement sur grand écran */
+@media (min-width: 769px) {
+  nav {
+    position: sticky;
+    top: 0;
+  }
+}
+
+/* Mobile : menu non fixé */
+@media (max-width: 768px) {
+  nav {
+    position: static;
+  }
+}
+
 
     nav button {
       background: transparent;
