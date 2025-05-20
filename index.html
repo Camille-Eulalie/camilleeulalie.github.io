@@ -9,8 +9,7 @@
       margin: 0;
       font-family: 'Georgia', serif;
       color: white;
-     background-image: url(https://raw.githubusercontent.com/Camille-Eulalie/camilleeulalie.github.io/main/banniere-camille1.png);
-
+      background-image: url(https://raw.githubusercontent.com/Camille-Eulalie/camilleeulalie.github.io/main/banniere-camille1.png);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -21,6 +20,7 @@
     nav {
       background: rgba(0, 0, 0, 0.6);
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       padding: 15px 0;
       position: sticky;
@@ -33,14 +33,16 @@
       border: none;
       color: #ffd1dc;
       font-size: 1.2em;
-      margin: 0 15px;
-      padding: 10px 20px;
+      margin: 0 10px;
+      padding: 10px 15px;
       cursor: pointer;
       transition: background 0.3s ease;
       border-radius: 25px;
+      flex: 1 1 auto;
     }
 
-    nav button:hover, nav button.active {
+    nav button:hover,
+    nav button.active {
       background: #ffd1dc;
       color: #3a003a;
       font-weight: bold;
@@ -68,16 +70,39 @@
       text-decoration: underline;
     }
 
-    @media (max-width: 600px) {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
       nav {
         flex-direction: column;
+        align-items: center;
       }
+
       nav button {
         margin: 8px 0;
+        width: 90%;
+        font-size: 1em;
       }
+
       .tab-content {
         margin: 20px 10px;
         padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p, li {
+        font-size: 1rem;
+        line-height: 1.6;
       }
     }
   </style>
