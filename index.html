@@ -106,7 +106,7 @@
     <button class="tablink" onclick="openTab(event, 'guidances')">Guidances</button>
    <button class="tablink" onclick="openTab(event, 'prières')">Prières</button>
    <button class="tablink" onclick="openTab(event, 'contact')">Contact</button>
-   <button class="tablink" onclick="openTab(event, 'temoignages')">Témoignages</button>
+   <button class="tablink" onclick="openTab('temoignages')">Témoignages</button>
 
   </nav>
 
@@ -247,18 +247,18 @@
     <p>🌐 <a href="https://camilleeulalie.github.io" target="_blank">camilleeulalie.github.io</a></p>
   </section>
 
-  <section id="temoignages" class="tab-content" style="display:none;">
-  <h2>Témoignages</h2>
-  <p>Merci de tout cœur pour vos mots…<br>
-  Chaque accompagnement est un espace sacré. Je vous partage ici, avec votre accord,
-  quelques ressentis et témoignages reçus.</p>
+  <script>
+    function openTab(evt, tabName) {
+      const tabcontents = document.querySelectorAll('.tab-content');
+      tabcontents.forEach(tc => tc.style.display = 'none');
 
-  <div style="margin-top: 2rem;">
-    <h3>Vous souhaitez laisser un témoignage ?</h3>
-    <p>Si vous avez reçu un accompagnement avec moi et souhaitez partager votre expérience,
-    je serais honorée de recueillir votre mot. Merci de m'envoyer votre témoignage par email à :<br>
-    <a href="mailto:camille.eulalie.accompagnements@gmail.com">
-      camille.eulalie.accompagnements@gmail.com
-    </a></p>
-  </div>
-</section>
+      const tablinks = document.querySelectorAll('.tablink');
+      tablinks.forEach(tl => tl.classList.remove('active'));
+
+      document.getElementById(tabName).style.display = 'block';
+      evt.currentTarget.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
