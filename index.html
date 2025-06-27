@@ -19,12 +19,15 @@
     }
 
   nav {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px 5px;
   z-index: 1000;
+  border-radius: 12px;
 }
 
 /* Fixe seulement sur grand écran */
@@ -43,33 +46,36 @@
 }
 
 
-    nav button {
-      background: transparent;
-      border: none;
-      color: #ffd1dc;
-      font-size: 1.2em;
-      margin: 0 15px;
-      padding: 10px 20px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      border-radius: 25px;
-    }
+   nav button {
+  background: transparent;
+  border: none;
+  color: #9caf88; /* vert sauge */
+  font-size: 1.2em;
+  margin: 0 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 25px;
+}
 
-    nav button:hover, nav button.active {
-      background: #ffd1dc;
-      color: #3a003a;
-      font-weight: bold;
-    }
+    nav button:hover,
+nav button.active {
+  background: #9caf88;
+  color: white;
+  font-weight: bold;
+}
 
     .tab-content {
-      max-width: 900px;
-      margin: 40px auto;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 30px 40px;
-      border-radius: 20px;
-      box-shadow: 0 0 15px rgba(255, 209, 220, 0.6);
-    }
-
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(156, 175, 136, 0.3);
+  color: white;
+}
     h1, h2 {
       margin-top: 0;
     }
